@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/blood_sample_frontend/static/css/main.05332d45.css",
-    "main.js": "/blood_sample_frontend/static/js/main.b93c0c1b.js",
-    "static/js/787.3cc51060.chunk.js": "/blood_sample_frontend/static/js/787.3cc51060.chunk.js",
-    "static/media/background-sunset-hawaii.jpg": "/blood_sample_frontend/static/media/background-sunset-hawaii.cc5b5fa6bf010fc0a4a5.jpg",
-    "index.html": "/blood_sample_frontend/index.html",
-    "main.05332d45.css.map": "/blood_sample_frontend/static/css/main.05332d45.css.map",
-    "main.b93c0c1b.js.map": "/blood_sample_frontend/static/js/main.b93c0c1b.js.map",
-    "787.3cc51060.chunk.js.map": "/blood_sample_frontend/static/js/787.3cc51060.chunk.js.map"
+    "main.css": "/static/css/main.0bce66f5.css",
+    "main.js": "/static/js/main.714e9684.js",
+    "static/js/787.3cc51060.chunk.js": "/static/js/787.3cc51060.chunk.js",
+    "static/media/background-sunset-hawaii.jpg": "/static/media/background-sunset-hawaii.cc5b5fa6bf010fc0a4a5.jpg",
+    "index.html": "/index.html",
+    "main.0bce66f5.css.map": "/static/css/main.0bce66f5.css.map",
+    "main.714e9684.js.map": "/static/js/main.714e9684.js.map",
+    "787.3cc51060.chunk.js.map": "/static/js/787.3cc51060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05332d45.css",
-    "static/js/main.b93c0c1b.js"
+    "static/css/main.0bce66f5.css",
+    "static/js/main.714e9684.js"
   ]
 }
