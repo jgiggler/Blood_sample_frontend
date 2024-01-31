@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Blood_sample_frontend/static/css/main.596aa597.css",
-    "main.js": "/Blood_sample_frontend/static/js/main.d9e9811f.js",
+    "main.js": "/Blood_sample_frontend/static/js/main.5ab9861c.js",
     "static/js/787.3cc51060.chunk.js": "/Blood_sample_frontend/static/js/787.3cc51060.chunk.js",
     "index.html": "/Blood_sample_frontend/index.html",
     "main.596aa597.css.map": "/Blood_sample_frontend/static/css/main.596aa597.css.map",
-    "main.d9e9811f.js.map": "/Blood_sample_frontend/static/js/main.d9e9811f.js.map",
+    "main.5ab9861c.js.map": "/Blood_sample_frontend/static/js/main.5ab9861c.js.map",
     "787.3cc51060.chunk.js.map": "/Blood_sample_frontend/static/js/787.3cc51060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.596aa597.css",
-    "static/js/main.d9e9811f.js"
+    "static/js/main.5ab9861c.js"
   ]
 }
