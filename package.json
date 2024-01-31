@@ -1,11 +1,11 @@
 {
-  "homepage": "http://jgiggler.github.io/Blood_sample_frontend",
+  "homepage": "http://jgiggler.github.io/",
   "name": "joel_gilger_react",
   "version": "0.1.0",
   "private": true,
   "author": "Joel Gilger",
   "description": "frontend of MERN app to track patient blood data",
-  "proxy": "http://localhost:3000",
+  
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -26,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "npm run development",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

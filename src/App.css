@@ -10,16 +10,16 @@
 
 /*   ----- Variables  -----  */
 :root {
-    --light-color: #F2CDAC;
-    --medium-color: #F2AD85;
-    --dark-color:  #401201;
-    --accent-color: rgba(0,255,0,0.3);
+    --light-color: #EDEDED;
+    --medium-color: #444444;
+    --dark-color:  #171717;
+    --accent-color: cyan;
   }
   
   /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
   body {       /* Can alternatively define in html {} or :root {} */
-    background-color:black;
-    background-image: url(images/background-sunset-hawaii.jpg);
+    background-color:rgb(14, 10, 10);
+    /* background-image: url(images/background-sunset-hawaii.jpg); */
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
   main {
     border-radius: 5px;
     text-align: center;
-    background-color: var(--dark-color);
+    background-color: var(--medium-color);
     color: var(--accent-color);
     
     
@@ -58,8 +58,8 @@
     article {
         border-radius: 5px;
         padding-bottom: 5px;
-        background-color: var(--medium-color);
-        color: var(--dark-color);
+        background-color: var(--dark-color);
+        color: var(--light-color);
        
     }
       #topic1 {}
@@ -69,7 +69,7 @@
   footer {
     border-radius: 5px;
     background-color: var(--dark-color);
-    color: var(--accent-color);
+    color: var(--light-color);
     padding: 5px;
     margin-top: 100px;
     text-align: center;
@@ -90,8 +90,16 @@
     padding: 1%;
 }
   nav a {
-    background-color: green;
-    color: whitesmoke;
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 10px #fff,            /* outer white */
+    -5px 0 10px #f0f,        /* outer left magenta */
+    5px 0 10px #0ff;         /* outer right cyan */
+    color: rgb(0, 0, 0);
     font-weight: bold;
     text-decoration: none;
     padding: 15px;
@@ -147,7 +155,14 @@
   h1, h2, h3, h4, h5, h6 {font-family: 'Aboreto', cursive;} 
   h1 {}
   h2 {
-    text-decoration: underline; 
+    
+    background-image: linear-gradient(45deg,#f0f, #0ff );
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    
+    
   }
   h3 {
     text-decoration: underline;
@@ -205,14 +220,15 @@ table-layout: fixed;
 #bloodTypeIcon {
   padding-right: 20px;
 }
-  caption {background-color: var(--light-color);
+caption {
+  background-color: var(--medium-color);
   padding: 10px;
-width: 40%;
-margin-left: auto;
-margin-right: auto;
-color: var(--dark-color);
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--accent-color);
 }
-  thead {background-color: var(--medium-color);
+  thead {background-color: var(--accent-color);
     font-size: 20px;
     font-weight: 800;
   }
@@ -220,7 +236,7 @@ color: var(--dark-color);
   tfoot {}
   tr {}
     tr:nth-child(even) {
-      background-color: rgb(255, 236, 185);
+      background-color: rgb(188, 222, 238);
     }
   th {color: var(--dark-color);}
   td {border:2px solid var(--dark-color);
@@ -258,7 +274,7 @@ color: var(--dark-color);
   }
   
   .person_API {
-    background-color: var(--light-color);
+    background-color: var(--medium-color);
     font-size: 20px; 
   }
 
@@ -298,7 +314,7 @@ color: var(--dark-color);
   .contact_reason {
     background-color: var(--light-color);
     border-radius: 10px;
-    color: darkgreen;
+    color: black;
     padding: 1%;
   }
 
