@@ -11,7 +11,7 @@ function LogPage({setPatient}) {
     //retrieve
     const getLog = async () => {
             console.log("getting Patient List")
-            const res = await fetch("http://13.57.59.175:3000/log", {
+            const res = await fetch("https://bloodnode.joelgilger.com:3000/log", {
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
@@ -29,7 +29,7 @@ function LogPage({setPatient}) {
     }
     //delete
     const deleteLog = async _id => {
-        const res = await fetch(`http://13.57.59.175:3000/log/${_id}`, {method: 'DELETE'})
+        const res = await fetch(`https://bloodnode.joelgilger.com:3000/log/${_id}`, {method: 'DELETE'})
         if (res.status === 204) {
             const getResponse = await fetch('/log');
             const patients = await getResponse.json();
