@@ -10,9 +10,17 @@ function LogPage({setPatient}) {
 
     //retrieve
     const getLog = async () => {
-            const res = await fetch("/log");
+            console.log("getting Patient List")
+            const res = await fetch("http://localhost:3000/log", {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            });
+            console.log("fetched")
             const patients = await res.json();
             setPatients(patients);
+            
     }
     //update
     const updateLog = async patient => {
@@ -21,19 +29,20 @@ function LogPage({setPatient}) {
     }
     //delete
     const deleteLog = async _id => {
-        const res = await fetch(`/log/${_id}`, {method: 'DELETE'})
+        const res = await fetch(`http://localhost:3000/log/${_id}`, {method: 'DELETE'})
         if (res.status === 204) {
             const getResponse = await fetch('/log');
             const patients = await getResponse.json();
             setPatients(patients);
         } else {
-            res.send(`Failed to delete movie with _id = ${_id}, status code = ${res.status}`)
+            res.send(`Failed to delete patient with _id = ${_id}, status code = ${res.status}`)
         }
     }
     useEffect(() => {
         getLog();
+        
     }, []);
-
+    
     return (
         <>
         <h2>Patient Log</h2>

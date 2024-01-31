@@ -16,12 +16,6 @@ const images = [
         originalHeight: '450px'
     },
     {
-        original: "images/hawaii-joel-beach-waves.JPG",
-        thumbnail: "images/hawaii-joel-beach-waves.JPG",
-        description: "Joel looking off into the ocean in Hawaii (2017)",
-        originalHeight: '450px'
-    },
-    {
         original: "images/outside-tree-hugging-joel-tahoe.jpg",
         thumbnail: "images/outside-tree-hugging-joel-tahoe.jpg",
         description: "Joel hugging a fallen tree in Tahoe (2020)",

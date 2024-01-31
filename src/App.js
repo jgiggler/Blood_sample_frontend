@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       
-      <BrowserRouter>
+      <BrowserRouter basename='/Blood_sample_frontend'>
 
         <header>
           <h1>Joel Gilger</h1>

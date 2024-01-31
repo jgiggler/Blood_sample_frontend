@@ -12,13 +12,13 @@ function CreatePage() {
 
     const addPatient = async () => {
         const newPatient = {name, collectionDate, bloodType, bloodSugar, triglycerides};
-        const response = await fetch('/log', {
+        const response = await fetch('http://13.57.59.175:3000/log', {
             method: 'post',
             body: JSON.stringify(newPatient),
-            headers: {
-                'Content-Type': 'application/json',
-        },
-    });
+            headers: {'Content-Type': 'application/json',}
+    }
+    );
+    
     if(response.status === 201){
         alert(`Patient created successfully.`);
         navigate("/log");
@@ -37,13 +37,13 @@ function CreatePage() {
             <form onSubmit={(e) => {e.preventDefault();}}>
                 <table>
                     <tr className="addPatient">
-                        <td><label for="name">First & Last Name</label>
+                        <td><label htmlFor="name">First & Last Name</label>
                         <input required type='text' placeholder="First Last" value={name} onChange={e => setName(e.target.value)} id="name"/></td>
-                        <td><label for="date">Collection Date</label>
+                        <td><label htmlFor="date">Collection Date</label>
                         <input required type="date" value={collectionDate} onChange={e => setCollectionDate(e.target.value)} id="date"/></td>
-                        <td><label for="bloodType">Blood Type</label>
+                        <td><label htmlFor="bloodType">Blood Type</label>
                         <select required defaultValue={bloodType} name="bloodType" id="bloodType" onChange={e => setBloodType(e.target.value)}>
-                            <option value="O-" selected="selected">O-</option>
+                            <option value="O-">O-</option>
                             <option value="O+">O+</option>
                             <option value="A-">A-</option>
                             <option value="A+">A+</option>
@@ -53,14 +53,14 @@ function CreatePage() {
                             <option value="AB+">AB+</option>
                             <option value="Rare Blood">Rare Blood</option>
                         </select></td>
-                        <td><label for="bloodSugar">Blood Sugar</label>
+                        <td><label htmlFor="bloodSugar">Blood Sugar</label>
                         <input required type="text" placeholder="100" value={bloodSugar} onChange={e => setBloodSugar(e.target.value)} id="bloodSugar"/></td>
-                        <td><label for="triglycerides">Triglycerides</label>
+                        <td><label htmlFor="triglycerides">Triglycerides</label>
                         <input required type="text" placeholder="100" value={triglycerides} onChange={e => setTriglycerides(e.target.value)} id="triglycerides"/></td>
                         
                     </tr>
                 </table>
-                <label for="submit">
+                <label htmlFor="submit">
                         <button type="submit" onClick={addPatient} id="submit">Add Patient</button>
                 </label>
             </form>
