@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Blood_sample_frontend/static/css/main.b99710bb.css",
-    "main.js": "/Blood_sample_frontend/static/js/main.4aef3f87.js",
-    "static/js/787.3cc51060.chunk.js": "/Blood_sample_frontend/static/js/787.3cc51060.chunk.js",
-    "static/media/background-sunset-hawaii.jpg": "/Blood_sample_frontend/static/media/background-sunset-hawaii.cc5b5fa6bf010fc0a4a5.jpg",
-    "index.html": "/Blood_sample_frontend/index.html",
-    "main.b99710bb.css.map": "/Blood_sample_frontend/static/css/main.b99710bb.css.map",
-    "main.4aef3f87.js.map": "/Blood_sample_frontend/static/js/main.4aef3f87.js.map",
-    "787.3cc51060.chunk.js.map": "/Blood_sample_frontend/static/js/787.3cc51060.chunk.js.map"
+    "main.css": "/static/css/main.596aa597.css",
+    "main.js": "/static/js/main.714e9684.js",
+    "static/js/787.3cc51060.chunk.js": "/static/js/787.3cc51060.chunk.js",
+    "index.html": "/index.html",
+    "main.596aa597.css.map": "/static/css/main.596aa597.css.map",
+    "main.714e9684.js.map": "/static/js/main.714e9684.js.map",
+    "787.3cc51060.chunk.js.map": "/static/js/787.3cc51060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b99710bb.css",
-    "static/js/main.4aef3f87.js"
+    "static/css/main.596aa597.css",
+    "static/js/main.714e9684.js"
   ]
 }
