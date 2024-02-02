@@ -12,7 +12,7 @@ function EditPage({patient}) {
 
     const editPatient = async () => {
         
-        const response = await fetch(`https://bloodnode.joelgilger.com:3000/log/${patient._id}`, {
+        const response = await fetch(`https://bloodnode.joelgilger.com/log/${patient._id}`, {
             method: 'put',
             body: JSON.stringify({
                 name: name,

@@ -12,7 +12,7 @@ function CreatePage() {
 
     const addPatient = async () => {
         const newPatient = {name, collectionDate, bloodType, bloodSugar, triglycerides};
-        const response = await fetch('https://bloodnode.joelgilger.com:3000/log', {
+        const response = await fetch('https://bloodnode.joelgilger.com/log', {
             method: 'post',
             body: JSON.stringify(newPatient),
             headers: {'Content-Type': 'application/json',}
